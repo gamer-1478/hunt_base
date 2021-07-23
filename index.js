@@ -7,5 +7,5 @@ app.set('view engine', 'ejs');
 app.get('*', async (req, res) => {
     res.render('index', { title: 'Wrong Place' })
 })
-
+//hmm
 app.listen(port, () => console.log(`Server is running on port ${port} likely on localhost, if not on localhost then you are in production but you already know that!`));
