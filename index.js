@@ -3,6 +3,8 @@ const app = express();
 const port = process.env.PORT || 6033;
 app.set('view engine', 'ejs');
 
+var fs = require('fs');
+
 async function basicChecks(req) {
     //takes in the whole req and gives true or error string, if true continue, or else return the error string given by this function.
     let rawdata = fs.readFileSync('data.json');
